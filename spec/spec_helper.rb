@@ -1,6 +1,6 @@
 require 'pry'
-question_files = File.join("..","questions","**","*.rb")
-Dir.glob(question_files).each { |f| require_relative  f }
+question_files = File.join("questions","**","*.rb")
+Dir.glob(question_files).each { |f| require_relative  File.join("..",f) }
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
     expectations.include_chain_clauses_in_custom_matcher_descriptions = true
