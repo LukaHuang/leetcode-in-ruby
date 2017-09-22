@@ -6,4 +6,3 @@ describe "258 - Add Digits" do
     expect( AddDigit.new.run(10) ).to eq(1)
   end
 end
-

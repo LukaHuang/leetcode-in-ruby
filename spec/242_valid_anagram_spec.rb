@@ -1,4 +1,4 @@
-require 'spec_helper'
+require_relative './spec_helper'
 require_relative '../questions/string/242_valid_anagram'
 
 describe "242 - Valid Anagram" do
